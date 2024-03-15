@@ -1,49 +1,49 @@
-Motus : Microservice Project
-"Motus" is a word game popularized by the television show "Motus." The objective of the game is to find the mystery word. The player has several attempts to succeed. After each attempt, the letters in common but misplaced with the mystery word and the letters in common and correctly placed are displayed.
+# Motus : Projet Microservice
 
-Our application allows playing this game. Here is the architecture of the Motus game:
+"Motus" est un jeu de mots popularisé par l'émission de télévision "Motus". L'objectif du jeu est de trouver le mot mystère. Le joueur dispose de plusieurs tentatives pour réussir. Après chaque tentative, les lettres en commun mais mal placées avec le mot mystère et les lettres en commun et correctement placées sont affichées.
 
+Notre application permet de jouer à ce jeu. Voici l'architecture du jeu Motus :
 motus_final
-scoring
-scoring.js
-scoring.html
-authentication
-authentification.js
-authentification.html
-register.js
-register.html
-apps
-apps.js
-apps.html
 
 
-Prerequisites
-To make our program work, you need to install the following packages:
 
-npm install -g npm
-sudo apt-get install nodejs
-sudo apt install redis-server
+- scoring
+  - scoring.js
+  - scoring.html
 
+- authentication
+  - authentification.js
+  - authentification.html
+  - register.js
+  - register.html
 
-Exécution
-Open a command prompt at the project root.
-
-Execute docker-compose up --build.
-
-Open a browser and navigate to [http://localhost:3000](http://localhost/login).
-
-First, sign up by entering a username and the same password twice.
-
-Then, log in using the password and username entered during sign-up.
-
-The mystery word is generated randomly. To know the mystery word, open a browser at [http://localhost:3000/word](http://localhost/login).
-
-To make an attempt, type the word in the search bar and click on "Vérifier."
-
-To see the score of previous users, click on "Score."
+- apps
+  - apps.js
+  - apps.html
 
 
-License
-The code is subject to the MIT License.
+
+## Prérequis
+
+Pour faire fonctionner notre programme, vous devez installer les packages suivants :
+
+- npm install -g npm
+- sudo apt-get install nodejs
+- sudo apt install redis-server
+
+## Exécution
+
+1. Ouvrez un terminal à la racine du projet.
+2. Exécutez docker-compose up --build.
+3. Ouvrez un navigateur et accédez à [http://localhost:3000](http://localhost/login).
+4. Tout d'abord, inscrivez-vous en entrant un nom d'utilisateur et le même mot de passe deux fois.
+5. Ensuite, connectez-vous en utilisant le mot de passe et le nom d'utilisateur saisis lors de l'inscription.
+6. Le mot mystère est généré aléatoirement. Pour connaître le mot mystère, ouvrez un navigateur à l'adresse [http://localhost:3000/word](http://localhost/login).
+7. Pour faire une tentative, saisissez le mot dans la barre de recherche et cliquez sur "Vérifier".
+8. Pour voir le score des utilisateurs précédents, cliquez sur "Score".
+
+## Licence
+
+Le code est soumis à la licence MIT.
 
 
