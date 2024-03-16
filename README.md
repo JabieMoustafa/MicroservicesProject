@@ -22,11 +22,11 @@ Notre application permet de jouer à ce jeu. Voici l'architecture du jeu Motus :
 
 Pour faire fonctionner notre programme, vous devez installer les packages suivants :
 
+```bash
 npm install -g npm
 sudo apt-get install nodejs
 sudo apt install redis-server
-
-
+```
 ## Exécution
 
 1. Ouvrez un terminal à la racine du projet.
