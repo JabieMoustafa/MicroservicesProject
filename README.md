@@ -1,6 +1,6 @@
 # Motus : Projet Microservice
 
-"Motus" est un jeu de mots popularisé par l'émission de télévision "Motus". L'objectif du jeu est de trouver le mot mystère. Le joueur dispose de plusieurs tentatives pour réussir. Après chaque tentative, les lettres en commun mais mal placées avec le mot mystère et les lettres en commun et correctement placées sont affichées.
+Motus est un jeu de mots popularisé par l'émission de télévision "Motus". L'objectif du jeu est de trouver le mot mystère. Le joueur dispose de plusieurs tentatives pour réussir. Après chaque tentative, les lettres en commun mais mal placées avec le mot mystère et les lettres en commun et correctement placées sont affichées.
 
 Notre application permet de jouer à ce jeu. Voici l'architecture du jeu Motus :
 
