@@ -31,9 +31,9 @@ Pour faire fonctionner notre programme, vous devez installer les packages suivan
 1. Ouvrez un terminal à la racine du projet.
 2. Exécutez docker-compose up --build.
 3. Ouvrez un navigateur et accédez à :
-   - [http://localhost:3000/login](http://localhost:3000/login) pour la page de connexion.
-   - [http://localhost:3001/motus](http://localhost:3001/motus) pour jouer au jeu Motus.
-   - [http://localhost:3002/score](http://localhost:3002/score) pour voir les scores précédents.
+   - [http://localhost:5000/login](http://localhost:3000/login) pour la page de connexion.
+   - [http://localhost:3000/motus](http://localhost:3001/motus) pour jouer au jeu Motus.
+   - [http://localhost:4000/score](http://localhost:3002/score) pour voir les scores précédents.
 
 4. Tout d'abord, inscrivez-vous en entrant un nom d'utilisateur et le même mot de passe deux fois.
 5. Ensuite, connectez-vous en utilisant le mot de passe et le nom d'utilisateur saisis lors de l'inscription.
