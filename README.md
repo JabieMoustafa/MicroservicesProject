@@ -39,7 +39,7 @@ sudo apt install redis-server
 Tout d'abord, inscrivez-vous en entrant un nom d'utilisateur et le même mot de passe deux fois.
 Ensuite, connectez-vous en utilisant le mot de passe et le nom d'utilisateur saisis lors de l'inscription.
 Le mot mystère est généré aléatoirement.
-Pour faire une tentative, saisissez le mot dans la barre de recherche et cliquez sur "Vérifier".
+Pour faire une tentative, saisissez le mot dans la barre de recherche et cliquez sur "Submit".
 Pour voir le score des utilisateurs précédents, cliquez sur "Score".
 
 ## Licence
