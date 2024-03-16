@@ -1,0 +1,56 @@
+version: '3'
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    volumes:
+      - ./data:/data
+
+  redisinsight:
+    image: redislabs/redisinsight:latest
+    ports:
+      - 8001:8001
+    depends_on:
+      - redis
+
+  motus:
+    build:
+      context: ./motus
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+      - redisinsight
+    environment:
+      - REDIS_URI=redis://redis:6379  # Utilisation du nom du service Redis pour l'URI
+      
+  auth:
+    build:
+      context: ./auth
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+      - redisinsight
+    environment:
+      - REDIS_URI=redis://redis:6379  # Utilisation du nom du service Redis pour l'URI
+ 
+  score-management:
+    build:
+      context: ./score-management-app
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+      - redisinsight
+    environment:
+      - REDIS_URI=redis://redis:6379  # Utilisation du nom du service Redis pour l'URI
+
